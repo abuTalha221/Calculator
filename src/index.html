@@ -6,7 +6,7 @@
     <title>Calculator App</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="flex justify-center items-center bg-[#f0f0f0] font-['Arial'] text-[16px]">
+  <body class="flex justify-center items-center bg-[#f0f0f0] font-['Arial'] text-[16px] h-screen">
     <div class="bg-[#fff] border border-r-[10px] shadow-lg overflow-hidden">
       <div class="w-[100%] bg-[#fff] p-5">
         <h1 class="w-[100%] text-[2rem] font-bold mb-[1rem]">Calculator</h1>
@@ -18,45 +18,45 @@
         </div>
 
         <div id="buttons" class="grid grid-cols-4 gap-[2px]">
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="clear">C</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="clear" id="button">C</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="delete">⌫</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="delete"id="button">⌫</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="parentheses">() </button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="parentheses"id="button">() </button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="add">+</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="add"id="button">+</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="7">7</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="7"id="button">7</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="8">8</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="8"id="button">8</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="9" >9</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="9" id="button">9</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="subtract">-</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="subtract"id="button">-</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="4">4</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="4"id="button">4</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="5">5</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="5"id="button">5</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="6">6</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="6"id="button">6</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="multiply">×</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="multiply"id="button">×</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="1">1</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="1"id="button">1</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="2">2 </button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="2"id="button">2 </button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="3">3</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="3"id="button">3</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="divide">/</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="divide"id="button">/</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="dot">.</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="dot"id="button">.</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="0">0</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="0"id="button">0</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="percentage">%</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="percentage"id="button">%</button>
 
-          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"" data-value="equal">=</button>
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"" data-value="equal"id="button">=</button>
 
         </div>
       </div>

@@ -1,13 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex justify-center items-center bg-[#f0f0f0] font-['Arial'] text-[16px]"
+  >
+    <div class="bg-[#fff] border border-r-[10px] shadow-sm overflow-hidden">
+      <div class="w-[100%] bg-[#fff] p-5">
+        <h1 class="w-[100%] text-[2rem] font-bold mb-[1rem]">Calculator</h1>
+
+        <div
+          id="display"class="w-[100%] min-h-[200px] bg-[#f1f1f1] text-[#222] text-right p-5 text-[24px] border-r-[6px] flex flex-col justify-end items-end gap-4 mb-4" >
+          <div id="display-input"></div>
+          <div id="display-output"></div>
+        </div>
+
+        <div id="buttons" class="grid grid-cols-4 gap-[2px]">
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="clear">C</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="delete">⌫</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="parentheses">() </button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="add">+</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="7">7</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="8">8</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="9" >9</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="subtract">-</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="4">4</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="5">5</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="6">6</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="multiply">×</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="1">1</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"data-value="2">2 </button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="3">3</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="divide">/</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="dot">.</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="0">0</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]" data-value="percentage">%</button>
+
+          <button class="w-[80px] h-[80px] bg-[#eee] border-none outline-none text-[24px] font-[500] cursor-pointer hover:bg-[#ddd] active:bg-[#ccc]"" data-value="equal">=</button>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
